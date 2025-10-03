@@ -5,7 +5,7 @@ local SMethod							= (WebSocket and WebSocket.connect)
 if not SMethod then return Client:Kick("Executor is too shitty.") end
 
 local Main							= function()
-	local Success, WebSocket				= pcall(SMethod, "ws://192.168.7.29:9000/")
+	local Success, WebSocket				= pcall(SMethod, "ws://192.168.7.29:8080/")
     	local Closed						= false
 
 	if not Success then return end
